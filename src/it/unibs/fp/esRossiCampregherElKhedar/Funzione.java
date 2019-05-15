@@ -3,10 +3,24 @@ package it.unibs.fp.esRossiCampregherElKhedar;
 import java.util.ArrayList;
 
 public class Funzione {
+	/**
+	 * 
+	 */
 	private double primo;
+	/**
+	 * 
+	 */
 	private double a;
+	/**
+	 * 
+	 */
 	private double b;
 
+	/**
+	 * 
+	 * @param n
+	 * @return
+	 */
 	public int funzione(double n) {
 		if (isPotenza(n)) {
 			return (int) ((primo - 1) * (n / primo));
@@ -17,6 +31,11 @@ public class Funzione {
 		}
 	}
 
+	/**
+	 * 
+	 * @param a
+	 * @return
+	 */
 	private boolean isPrimo(double a) {
 		int divisori = 0;
 
@@ -30,6 +49,11 @@ public class Funzione {
 		return true;
 	}
 
+	/**
+	 * 
+	 * @param a
+	 * @return
+	 */
 	private boolean isPotenza(double a) {
 		ArrayList<Integer> listaPrimi = new ArrayList<Integer>();
 		for (int i = 2; i <= a; i++) {
@@ -52,6 +76,11 @@ public class Funzione {
 		return false;
 	}
 
+	/**
+	 * 
+	 * @param a
+	 * @return
+	 */
 	private boolean isMCD(double a) {
 		for (int i = 1; i <= a; i++) {
 			if (a % (a - i) == 0) {
