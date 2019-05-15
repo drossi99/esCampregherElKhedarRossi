@@ -1,4 +1,4 @@
-package it.unibs.fp.esRossiCampregherElKhedar;
+package it.unibs.fp.pg;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
